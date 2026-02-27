@@ -1,7 +1,3 @@
-Here’s a clean, idiomatic README you can use as a starting point for **gaun**, styled similarly to *baan* and appropriate for a Ruby gem.
-
----
-
 # gaun (गाउँ)
 
 **Gaun** is a Ruby library providing structured **geographical and administrative data for Nepal**, including provinces, districts, municipalities, and villages.
