@@ -1,0 +1,8 @@
+provinces:
+  - code: "NP-P1"
+    name_en: "Koshi"
+    name_ne: "कोशी"
+    districts:
+      - code: "0101"
+        name_en: "Bhojpur"
+        name_ne: "भोजपुर"

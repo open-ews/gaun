@@ -1,6 +1,8 @@
 # gaun (गाउँ)
 
-**Gaun** is a Ruby library providing structured **geographical and administrative data for Nepal**, including provinces, districts, municipalities, and villages.
+[![Build](https://github.com/open-ews/gaun/actions/workflows/build.yml/badge.svg)](https://github.com/open-ews/gaun/actions/workflows/build.yml)
+
+**Gaun** is a Ruby library providing structured **geographical and administrative data for Nepal**, including provinces and districts.
 
 > *गाउँ (Gaun)* means **village** in Nepali.
 
