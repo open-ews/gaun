@@ -6,20 +6,20 @@ module Gaun
       all_provinces = Province.all
 
       expect(all_provinces).to be_a(Array)
-      expect(all_provinces.count).to eq(18)
+      expect(all_provinces.count).to eq(1)
 
-      vientiane_prefecture = Province["LA-VT"]
+      koshi_province = Province["NP-P1"]
 
-      expect(vientiane_prefecture).to have_attributes(
-        code: "LA-VT",
-        name_en: "Vientiane Prefecture",
-        name_lo: "ວຽງຈັນ",
+      expect(koshi_province).to have_attributes(
+        code: "NP-P1",
+        name_en: "Koshi",
+        name_ne: "कोशी",
         districts: include(
           have_attributes(
             code: "0101",
-            name_en: "Chanthabuly",
-            name_lo: "ຈັນທະບູລີ",
-            parent_division: vientiane_prefecture,
+            name_en: "Bhojpur",
+            name_ne: "भोजपुर",
+            parent_division: koshi_province,
             subdivisions: []
           )
         ),
