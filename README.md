@@ -13,7 +13,7 @@ This gem is designed to be lightweight, easy to use, and suitable for applicatio
 ## Features
 
 * 📍 Administrative geodata for **Nepal**
-* 🗺️ Hierarchical structure (Province → District → Municipality → Ward/Village)
+* 🗺️ Hierarchical structure (Province → District)
 * 🧩 Easy Ruby API
 * 🚀 No external API dependencies
 * 📦 Designed for offline and embedded use
@@ -45,65 +45,29 @@ gem install gaun
 
 ## Usage
 
-### Load all administrative data
-
-```ruby
-Gaun.all
-```
-
 ### Provinces
 
 ```ruby
-Gaun.provinces
+Gaun::Province.all
 ```
 
 ```ruby
-province = Gaun.provinces.first
-province.name
+province = Gaun::Province.first
+province.name_en
+province.name_ne
 ```
 
 ### Districts
 
 ```ruby
-Gaun.districts
+Gaun::District.all
 ```
 
 ```ruby
-district = Gaun.districts.find { |d| d.name == "Kathmandu" }
-district.province
+district = Gaun::District.find { |d| d.name_en == "Bhojpur" }
+district.name_en
+district.name_ne
 ```
-
-### Municipalities / Local Levels
-
-```ruby
-Gaun.municipalities
-```
-
-```ruby
-municipality = Gaun.municipalities.find { |m| m.name == "Lalitpur Metropolitan City" }
-municipality.district
-```
-
-### Wards / Villages
-
-```ruby
-municipality.wards
-```
-
----
-
-## Data Model (Conceptual)
-
-```text
-Province
- └── District
-      └── Municipality (Metropolitan / Sub-Metropolitan / Municipality / Rural Municipality)
-           └── Ward / Village
-```
-
-Each entity exposes identifiers, Nepali and English names (where available), and parent relationships.
-
----
 
 ## Use Cases
 

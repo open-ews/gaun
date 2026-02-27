@@ -5,6 +5,14 @@ module Gaun
         data.values
       end
 
+      def first
+        all.first
+      end
+
+      def find(...)
+        all.find(...)
+      end
+
       def [](code)
         data[code]
       end
