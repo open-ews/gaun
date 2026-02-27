@@ -1,5 +1,5 @@
 {
-  "bootstrap-sha": "a5cb2c3881667534c63a973631295fbc7011c1fc",
+  "bootstrap-sha": "96e184a0cb4a3de5aa9ab838c8d0b90b59474f5d",
   "include-component-in-tag": false,
   "version-file": "lib/gaun/version.rb",
   "packages": {
