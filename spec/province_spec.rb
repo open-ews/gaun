@@ -6,7 +6,10 @@ module Gaun
       all_provinces = Province.all
 
       expect(all_provinces).to be_a(Array)
-      expect(all_provinces.count).to eq(1)
+      expect(all_provinces.count).to eq(7)
+      expect(all_provinces.map(&:code)).to eq(
+        %w[NP-P1 NP-P2 NP-P3 NP-P4 NP-P5 NP-P6 NP-P7]
+      )
 
       province = Province["NP-P1"]
 
