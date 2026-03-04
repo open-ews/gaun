@@ -23,8 +23,6 @@ jobs:
 
       - uses: ruby/setup-ruby@v1
         if: ${{ steps.release.outputs.release_created }}
-        with:
-          bundler-cache: false
 
       - name: publish gem
         if: ${{ steps.release.outputs.release_created }}
